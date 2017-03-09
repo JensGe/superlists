@@ -79,7 +79,7 @@ class NewVisitorTest(LiveServerTestCase):
 		## We use a new browser session to make sure that no information
 		## of Edith's is coming through from cookies
 		self.browser.quit()
-		self.browser = webbrowser.Firefox()
+		self.browser = webdriver.Firefox()
 		
 		# Francis visits the homepage There is no sign of Ediths list
 		self.browser.get(self.live_server_url)
